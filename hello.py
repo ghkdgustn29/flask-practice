@@ -9,5 +9,9 @@ def hello_world():
 def hello_bone():
     return 'idiot!'
 
+@app.route('/bone/<name>')
+def hello_name(name):
+    return name
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
